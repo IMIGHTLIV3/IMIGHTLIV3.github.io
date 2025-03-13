@@ -1,0 +1,119 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+:root {
+    --blanco:rgba(228, 228, 228, 1);
+}
+
+body{
+    font-family: "Pacifico", cursive;
+    background: black;
+    background-repeat: no-repeat;
+    height: 100%;
+    margin: 0;
+    background-attachment: fixed;
+    box-sizing: border-box;
+}
+
+h1{
+    color: white;
+}
+
+h2{
+    color: white;
+}
+
+.Textup{
+    text-align: center;
+}
+
+.IMG{
+    display: flex;
+    justify-content: center;
+}
+
+p{
+    color: white;
+}
+
+.Reproductor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--blanco);
+    width: 750px;
+    padding: 10px 30px;
+    border-radius: 20px;
+    background-color: rgba(228, 228, 228, 0.1);
+}
+
+.Reproductor h1{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 0.9;
+    padding-bottom: 0%;
+}
+
+.Reproductor p{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 0.9;
+    opacity: 0.6;
+}
+
+#progreso {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 100%;
+    background: rgba(165, 165, 165, 0.4);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#progreso::-webkit-slider-thumb{
+    appearance: none;
+    -webkit-appearance: none;
+    background: rgba(165, 165, 165, 0.9);
+    width: 16px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    outline: 4px solid white;
+}
+
+.controles{
+    display: flex;
+    justify-content: center;
+}
+
+.controles button{
+    aspect-ratio: 1/1;
+    margin: 10px;
+    background: rgba(165, 165, 165, 0.3);
+    color: var(--blanco);
+    border-radius: 50%;
+    border: 1px solid var(--blanco);
+    outline: 0;
+    font-size: 1.4rem;
+    box-shadow: 0 6px 10px rgba(228, 228, 228, 0.3);
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+.controles .control:hover {
+    transform: scale(1.1);
+}
+
+.controles #iconControl{
+    transform: scale(1.3);
+}
+
+.controles #iconControl:hover{
+    transform: scale(1.4);
+}
+
+.I{
+    color: white;
+    text-align: center;
+}
